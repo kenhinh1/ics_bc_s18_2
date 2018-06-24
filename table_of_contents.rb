@@ -1,0 +1,11 @@
+lineWidth = 40
+puts "Table of Contents".center(lineWidth)
+print "Chapter 1:".ljust(lineWidth)
+print "The Boy Who Lived".center(lineWidth)
+puts "page 1".rjust(lineWidth)
+print "Chapter 2:".ljust(lineWidth)
+print "The Vanishing Glass".center(lineWidth)
+puts "page 13".rjust(lineWidth)
+print "Chapter 3:".ljust(lineWidth)
+print "The Letters from No One".center(lineWidth)
+print "page 21".rjust(lineWidth)
