@@ -1,0 +1,321 @@
+Kens-MBP:ics_bc_s18 kenhinh$ ls
+README.md			learn-to-program_p5_0.pdf
+helper_docs			week1
+lab_runner.rb			week2
+Kens-MBP:ics_bc_s18 kenhinh$ ruby lab_runner.rb 2
+
+For each of the following questions, type the output
+displayed by the interactive Ruby interpreter when the
+expression is evaluated.
+Type Error if you think there is an error.
+For multiple choice, type the answer you think is correct.
+If the answer has multiple lines, separate each output with a SEMICOLON (and a space)
+If you get stuck, try out in the interpreter.
+Type OK to continue.
+OK
+
+
+***** CHAPTER 6: MORE ABOUT METHODS *****
+
+----------Question 1-----------
+>> 'Capitalize'.upcase
+CAPITALIZE
+Not quite. Please try again.
+"CAPITALIZE"
+OK!
+
+----------Question 2-----------
+>> 55 / 5 % 3
+2
+OK!
+
+----------Question 3-----------
+>> 10 % 12
+10
+OK!
+
+----------Question 4-----------
+>> 'It is '.length + 2018
+2023
+Not quite. Please try again.
+2024
+OK!
+
+----------Question 5-----------
+>> rand(6)/ 6
+0
+OK!
+
+----------Question 6-----------
+>> str = 'sdrofnats-naht-retrams'
+>> rts = ', ' + str.reverse
+>> rts = 'welcome to cal' + rts
+>> puts rts
+welcome to calwelcome to cal
+Not quite. Please try again.
+error
+Not quite. Please try again.
+Error
+Not quite. Please try again.
+welcome to cal, smarter-than-stanfords
+Not quite. Please try again.
+welcome to cal, smarter-than-stanfords; nil               
+OK!
+
+
+***** CHAPTER 7: FLOW CONTROL *****
+
+----------Question 1-----------
+>> 'big' < 'small'
+true
+OK!
+
+----------Question 2-----------
+>> 50 / 5 > '10' 
+false
+Not quite. Please try again.
+true
+Not quite. Please try again.
+False
+Not quite. Please try again.
+True
+Not quite. Please try again.
+error
+OK!
+
+----------Question 3-----------
+>> '5' < '20' 
+true
+Not quite. Please try again.
+false
+OK!
+
+----------Question 4-----------
+>> 5 % 2 == 2 || 2**3 == 6
+false
+OK!
+
+----------Question 5-----------
+>> 5 / 2 == 4 / 2 && 2 > 1
+false
+Not quite. Please try again.
+true
+OK!
+
+----------Question 6-----------
+>> 'a' < 'A' || 5 < 20 && 4.6.to_i == 4
+true
+OK!
+
+----------Question 7-----------
+>> 2 > 1 && '1'
+true
+Not quite. Please try again.
+false
+Not quite. Please try again.
+Error
+Not quite. Please try again.
+true
+Not quite. Please try again.
+ha; nil
+Not quite. Please try again.
+nil
+Not quite. Please try again.
+false
+Not quite. Please try again.
+1
+Not quite. Please try again.
+"1"
+OK!
+
+----------Question 8-----------
+>> 1 && (puts 'ha')
+error
+Not quite. Please try again.
+ha
+Not quite. Please try again.
+ha; nil
+OK!
+
+----------Question 9-----------
+>> 1**3 < 2 && 1 / 0 == 0 && 4 < 5
+error
+OK!
+
+----------Question 10-----------
+>> if (puts 'hello')
+>>    puts 'world'
+>> end
+hello world
+Not quite. Please try again.
+hello; nil
+OK!
+
+----------Question 11-----------
+>> if rand(1) < 1
+>>     puts 'I love cs!'
+>> else
+>>     puts 'I hate cs!'
+>> end
+I love cs!; nil
+OK!
+
+----------Question 12-----------
+>> n = 2
+>> while n > -1 
+>>     puts n
+>>     n = n - 1
+>> end
+2;1;0;nil
+Not quite. Please try again.
+2; 1; 0; nil
+OK!
+
+----------Question 13-----------
+>> people, cats, dogs = 20, 30, 15
+>> string = ""
+>> if people < cats
+>> 	string += "Too many cats! "
+>> end
+>> if people > cats
+>> 	string += "Not many cats! "
+>> end
+>> if people < dogs
+>> 	string += "The world is drooled on! "
+>> end
+>> dogs += 5
+>> if people >= dogs
+>>  string += "People are greater than or equal to dogs."
+>> end
+>> string
+"Too many cats! People are greater than or equal to dogs."
+OK!
+
+
+***** CHAPTER 8: ARRAYS AND ITERATORS *****
+
+----------Question 1-----------
+>> array = ['Richard', 'Jared', 'Gilfoyle', 'Dinesh']
+>> puts array[3] + ' is friends with ' + array[4]
+A. Gilfoyle is friends with Dinesh
+B. Dinesh is friends with nil
+C. Error
+A
+Not quite. Please try again.
+C
+OK!
+
+----------Question 2-----------
+Continued from previous question:
+>> array[4] = ['Pied Piper']
+>> puts array[0] + ' is the founder of ' + array[4]
+Richard is the founder of Pied Piper.
+Not quite. Please try again.
+Richard is the founder of Pied Piper
+Not quite. Please try again.
+error
+OK!
+
+----------Question 3-----------
+Continued from previous question:
+>> puts array[0] + ' is the founder of ' + array[4][0]
+Richard is the founder of Pied Piper; nil
+OK!
+
+----------Question 4-----------
+>> top_public_schools = [['UCB'], ['UCLA'], ['UofV']]
+>> ranking = 1
+>> top_public_schools.each do |school|
+>>	school.push ranking
+>> 	ranking = ranking + 1
+>> end
+>> ranking
+4
+OK!
+
+----------Question 5-----------
+>> puts top_public_schools[0][0] + ' is always the ONE AND ONLY number ' + top_public_schools[0][1].to_s + ' public school'
+UCB is always the ONE AND ONLY number 1 public school
+=> nilNot quite. Please try again.
+UCB is always the ONE AND ONLY number 1 public school
+=> nilNot quite. Please try again.
+UCB is always the ONE AND ONLY number 1 public school; nil
+Not quite. Please try again.
+UCB is always the ONE AND ONLY number 1 public school
+=> nilNot quite. Please try again.
+UCB  is always the ONE AND ONLY number 1 public school
+Not quite. Please try again.
+UCB is always the ONE AND ONLY number 1 public school; nil
+OK!
+
+----------Question 6-----------
+>> fido, molly = 3, 4
+>> duke = false
+>> doggos = [fido, molly, duke]
+>> lucifer = 666
+>> cats = [lucifer]
+>> years = doggos[0] + doggos[1]
+>> if years == 7
+>>	 if !duke
+>>		pets = [doggos, cats]
+>>	end
+>> end
+>> pets
+[[3, 4, false], [666]]
+OK!
+
+----------Question 7-----------
+>> x, o = 'x', 'o'
+>> string = ""
+>> grid = [[x, o, o, o], [o, x, o, o]]
+>> grid.each do |row|
+>>	row.each do |col|
+>>		string += col
+>>	end
+>> end
+>> puts string
+xooooxoo; nil
+OK!
+
+----------Question 8-----------
+>> veggies = ["Carrots", "Alfalfa", "Lettuce", "Onions", "Potatoes"]
+>> secretWord = ""
+>> veggies.each do |veg|
+>>	if veg.length == 7
+>>	 	secretWord += veg[0]
+>>	end
+>> end
+>> secretWord
+"CAL"
+OK!
+
+----------Question 9-----------
+>> count = 3
+>> berkeley = []
+>>
+>> count.times do
+>>     if count < 10
+>>         berkeley = []
+>>         count += 1
+>>     end
+>>     berkeley.push "Go Bears!"
+>> end
+>>
+>> if count < 10
+>>     berkeley.push "elggurts ehT"
+>>     berkeley.push true
+>> end
+>>
+>> if berkeley.pop
+>>     berkeley.push "is real"
+>> end
+>>
+>> cal = [berkeley[1].reverse]
+>> cal.push berkeley.pop
+>> puts cal.join(" ") + ', ' + berkeley[0]
+The struggle is real, Go Bears!; NIL
+Not quite. Please try again.
+The struggle is real, Go Bears!; nil
+OK!
+
+
